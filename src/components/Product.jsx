@@ -84,7 +84,7 @@ class Product extends Component {
                     <hr />
                     <Card.Text>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        <p><b>{this.props.product.isFreeDeliveryAvailable ? 'F' : 'No f'}ree delivery</b></p>
+                        <b>{this.props.product.isFreeDeliveryAvailable ? 'F' : 'No f'}ree delivery</b>
                         {this.getAvailability()}
                         {this.getMaxPurchaseLimit()}
                     </Card.Text>

@@ -40,7 +40,7 @@ class NavbarComponent extends Component {
                     <Nav.Link as={Link} to="/cart">Cart <Badge pill variant="primary">{this.props.cartItemsNum}</Badge>&nbsp;&nbsp;₹ {this.props.cartValue}</Nav.Link>
                 </Nav>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <Navbar.Text>
-                    Hello, <a href="#">{this.props.name}</a>
+                    Hello, <a href="https://www.linkedin.com/in/raj--kapadia/">{this.props.name}</a>
                 </Navbar.Text>
             </Navbar.Collapse>
         </Navbar>);
