@@ -1,16 +1,20 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Cart from './Cart';
-import Home from './Home';
 import NavbarComponent from './NavbarComponent';
+import { Suspense, lazy } from 'react';
+
+const Home = lazy(() => import('./Home'));
+const Cart = lazy(() => import('./Cart'));
 
 function App() {
   return (
     <Router>
       <NavbarComponent />
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/cart" component={Cart} />
-      </Switch>
+      <Suspense fallback={<div />}>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/cart" component={Cart} />
+        </Switch>
+      </Suspense>
     </Router>
   );
 }
