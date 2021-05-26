@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import { Card, Col, Button, Badge } from 'react-bootstrap';
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
+import Badge from 'react-bootstrap/Badge';
 import { connect } from 'react-redux';
 import { addItem, changeTotalItemCount, removeItem } from '../actions';
 import '../style/main.css';

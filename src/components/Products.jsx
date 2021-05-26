@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Product from './Product';
 import PRODUCTS from '../data/PRODUCTS';
-import { Container, Row } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
 class Products extends Component {
     constructor(props) {

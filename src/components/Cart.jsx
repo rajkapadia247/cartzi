@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Container, Row } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 import { connect } from 'react-redux';
 import { getValue } from '../utilities/main';
 import Product from './Product';

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Badge, Nav, Navbar } from 'react-bootstrap';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Badge from 'react-bootstrap/Badge';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { getValue } from '../utilities/main';
