@@ -1,6 +1,17 @@
-# cartzi
+# Cartzi Project
 
-## Steps to build:
-### 1. Clone the repository
-### 2. run `npm install`
-### 3. run `npm start`
+Last updated: 2023-01-12
+
+A modern e-commerce platform built with Node.js and Express.
+
+## Features
+- User authentication
+- Product catalog
+- Shopping cart
+- Order management
+
+## Installation
+```bash
+npm install
+npm start
+```
