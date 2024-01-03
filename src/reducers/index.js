@@ -1,15 +1,14 @@
-import totalItems from "./totalItems";
-import view from "./view";
-import cartDetails from "./cartDetails";
-import { combineReducers } from 'redux';
-import userDetails from "./userDetails";
+// Reducers - Updated 2024-01-03
 
+function calculateTotal(items) {
+  return items.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+}
 
-const rootReducer = combineReducers({
-    totalItemsNum: totalItems,
-    isGridView: view,
-    cartDetails: cartDetails,
-    userDetails: userDetails
-});
+function formatCurrency(amount) {
+  return new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD'
+  }).format(amount);
+}
 
-export default rootReducer;
+module.exports = { calculateTotal, formatCurrency };
