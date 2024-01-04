@@ -1,26 +1,13 @@
-export const changeView = () => {
-    return {
-        type: 'CHANGE_VIEW'
-    }
-}
+// Actions - Updated 2024-01-04
 
-export const addItem = (payload) => {
-    return {
-        type: 'ADD_PRODUCT',
-        payload
-    };
-}
-
-export const changeTotalItemCount = (payload) => {
-    return {
-        type: 'CHANGE_ITEM_COUNT',
-        payload
-    };
-}
-
-export const removeItem = (payload) => {
-    return {
-        type: 'REMOVE_PRODUCT',
-        payload
-    }
-}
+module.exports = {
+  port: process.env.PORT || 3000,
+  environment: process.env.NODE_ENV || 'development',
+  database: {
+    url: process.env.DATABASE_URL || 'mongodb://localhost:27017/cartzi'
+  },
+  jwt: {
+    secret: process.env.JWT_SECRET || 'your-secret-key',
+    expiresIn: '24h'
+  }
+};
