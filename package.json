@@ -1,7 +1,7 @@
 {
   "name": "cartzi",
   "version": "1.0.0",
-  "description": "E-commerce platform - updated 2024-01-03",
+  "description": "E-commerce platform - updated 2024-01-04",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
