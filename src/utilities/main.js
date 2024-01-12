@@ -1,5 +1,16 @@
-import _ from 'lodash';
+// Utility functions - Updated 2024-01-12
 
-export const getValue = (object, key, defaultValue) => _.get(object, key, defaultValue);
+function formatDate(date) {
+  return date.toISOString().split('T')[0];
+}
 
-export const setValue = (object, key, defaultValue) => _.set(object, key, defaultValue);
+function generateId() {
+  return Math.random().toString(36).substr(2, 9);
+}
+
+function validateEmail(email) {
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+}
+
+module.exports = { formatDate, generateId, validateEmail };
