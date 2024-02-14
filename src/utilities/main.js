@@ -1,4 +1,4 @@
-// Utility functions - Updated 2024-02-12
+// Utility functions - Updated 2024-02-14
 
 function formatDate(date) {
   return date.toISOString().split('T')[0];
