@@ -1,4 +1,4 @@
-// Reducers - Updated 2024-04-04
+// Reducers - Updated 2024-04-11
 
 function calculateTotal(items) {
   return items.reduce((sum, item) => sum + (item.price * item.quantity), 0);
