@@ -1,6 +1,6 @@
 # Cartzi Project
 
-Last updated: 2024-04-27
+Last updated: 2024-04-29
 
 A modern e-commerce platform built with Node.js and Express.
 
